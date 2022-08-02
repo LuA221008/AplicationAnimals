@@ -1,11 +1,12 @@
 .title{
+    margin-top: 5rem;
     text-align: center;
     color: rgb(102, 173, 236);
 
 }
 .container{
     background-color: rgb(247, 236, 236);
-    height: 85rem;
+    height: 55rem;
 }
 body{
     background-color: rgb(84, 84, 84);
@@ -39,7 +40,10 @@ body{
     border-radius: 2rem;
 }
 .especie{
-    margin-left: 3rem;
+    margin-left: 15rem;
+}
+.nombre{
+    margin-left: 15rem;
 }
 .actualizar{
     width: 5rem;

@@ -14,7 +14,7 @@ let label = document.createElement("label");
 label.innerText = "Nombre del animal: ";
 
 let imput = document.createElement("input");
-imput.classList.add("nombre")
+label.classList.add("nombre")
 label.append(imput)
 
 
