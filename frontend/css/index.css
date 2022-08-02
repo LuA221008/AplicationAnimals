@@ -1,0 +1,16 @@
+.title{
+    text-align: center;
+    color: aliceblue;
+
+}
+.container{
+    background-color: black;
+    height: 85rem;
+}
+body{
+    background-color: rgb(84, 84, 84);
+}
+.tabla{
+    background-color: aqua;
+    width: 20rem;
+}

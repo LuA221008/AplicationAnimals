@@ -1,0 +1,244 @@
+{
+  "Amimales": [
+    {
+      "id": 1,
+      "Nombre": "Vaca",
+      "Especie": "taurus Linnaeus"
+    },
+    {
+      "id": 2,
+      "Nombre": "Conejo",
+      "Especie": "Leporidae"
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 17
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 18
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 19
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 20
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 21
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 22
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 23
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 24
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 25
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 26
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 27
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 28
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 29
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 30
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 31
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 32
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 33
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 34
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 35
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 36
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 37
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 38
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 39
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 40
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 41
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 42
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 43
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 44
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 45
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 46
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 47
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 48
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 49
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 50
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 51
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 52
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 53
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 54
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 55
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 56
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 57
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 58
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 59
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 60
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 61
+    },
+    {
+      "Nombre": "pez",
+      "especie": "pescado",
+      "id": 62
+    }
+  ]
+}
