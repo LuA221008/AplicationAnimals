@@ -1,11 +1,6 @@
 {
   "Amimales": [
     {
-      "id": 1,
-      "Nombre": "Vaca",
-      "Especie": "taurus Linnaeus"
-    },
-    {
       "id": 2,
       "Nombre": "Conejo",
       "Especie": "Leporidae"

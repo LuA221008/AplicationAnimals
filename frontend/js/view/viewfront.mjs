@@ -1,10 +1,15 @@
-import { getAnimal} from "../controller/contoller.mjs";
+import { animalDelete, getAnimal} from "../controller/contoller.mjs";
 import{animalPost} from"../controller/contoller.mjs"
+
 
 let data= await getAnimal("http://localhost:3000/Amimales");
 let title = document.createElement("h1");
 title.classList.add("title")
 title.innerText = "ANIMALES"
+
+
+let containerList = document.createElement("div");
+containerList.classList.add("containerLista")
 
 let label = document.createElement("label");
 label.innerText = "Nombre del animal: ";
@@ -38,6 +43,11 @@ buttonAgregar.innerHTML="Agregar"
 
 
 
+
+
+
+
+
 export const viewTitle = ()=>{
 
     
@@ -54,8 +64,9 @@ export const viewTitle = ()=>{
 
     crearListaEspecieAnimales(data);
     crearListaNombresAnimales(data);
-    
-    container.append(title,label,labelEspecie,lista,listaEspecie,buttonAgregar) 
+
+    containerList.append(lista,listaEspecie)    
+    container.append(title,label,labelEspecie,containerList,buttonAgregar) 
  
 }
 
@@ -76,11 +87,16 @@ function crearListaNombresAnimales(dataUser) {
   
   function crearListaEspecieAnimales(dataUser) {    
     dataUser.forEach((element) => {    
-       
+        let buttonEleminar = document.createElement("button");
+        buttonEleminar.classList.add("elimina");
+        buttonEleminar.innerHTML="Eliminar"       
         let crearB = document.createElement("li");
-        crearB.textContent = (element.Especie);
+        crearB.textContent = (element.Especie);        
         crearB.classList.add("newAnimlas");
-        listaEspecie.append(crearB);
+        buttonEleminar.addEventListener("click",()=>{
+            eliminarAnimal();
+        })
+        listaEspecie.append(crearB,buttonEleminar);
       
     });
   }
@@ -88,6 +104,10 @@ function crearListaNombresAnimales(dataUser) {
   function agergarAnimal(nombre,especie){
         animalPost("http://localhost:3000/Amimales",nombre,especie)
     
+  }
+
+  function eliminarAnimal(){
+    animalDelete("http://localhost:3000/Amimales",1)
   }
 
   
