@@ -63,7 +63,7 @@ export const viewTitle = ()=>{
 
 
     crearListaEspecieAnimales(data);
-    crearListaNombresAnimales(data);
+    
 
     containerList.append(lista,listaEspecie)    
     container.append(title,label,labelEspecie,containerList,buttonAgregar) 
@@ -74,29 +74,33 @@ export const viewTitle = ()=>{
 
 
 
-function crearListaNombresAnimales(dataUser) {    
-    dataUser.forEach((element) => {    
-       
-        let crearB = document.createElement("li");
-        crearB.textContent = (element.Nombre);
-        crearB.classList.add("newAnimlas");
-        lista.append(crearB);
-      
-    });
-  }
+
   
   function crearListaEspecieAnimales(dataUser) {    
     dataUser.forEach((element) => {    
         let buttonEleminar = document.createElement("button");
         buttonEleminar.classList.add("elimina");
-        buttonEleminar.innerHTML="Eliminar"       
-        let crearB = document.createElement("li");
-        crearB.textContent = (element.Especie);        
-        crearB.classList.add("newAnimlas");
+        buttonEleminar.innerHTML="Eliminar" 
+
+        let crearId = document.createElement("div")
+        let id=crearId.textContent=(element.id)
+        
+        
+
+        let crearA = document.createElement("div");
+        crearA.textContent = (element.Nombre);
+
+        let crearB = document.createElement("div");
+        crearB.textContent = (element.Especie); 
+        
+        crearId.append(crearA,crearB,buttonEleminar)       
+        
+        console.log(id)
+        
         buttonEleminar.addEventListener("click",()=>{
-            eliminarAnimal();
+            eliminarAnimal(id);
         })
-        listaEspecie.append(crearB,buttonEleminar);
+        listaEspecie.append(crearId);
       
     });
   }
@@ -106,8 +110,8 @@ function crearListaNombresAnimales(dataUser) {
     
   }
 
-  function eliminarAnimal(){
-    animalDelete("http://localhost:3000/Amimales",1)
+  function eliminarAnimal(id){
+    animalDelete("http://localhost:3000/Amimales",id)
   }
 
   

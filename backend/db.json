@@ -1,11 +1,6 @@
 {
   "Amimales": [
     {
-      "id": 2,
-      "Nombre": "Conejo",
-      "Especie": "Leporidae"
-    },
-    {
       "Nombre": "pez",
       "Especie": "pescado",
       "id": 3
@@ -14,6 +9,11 @@
       "Nombre": "conejo",
       "Especie": "rabbito",
       "id": 4
+    },
+    {
+      "Nombre": "perro",
+      "Especie": "Can",
+      "id": 5
     }
   ]
 }
