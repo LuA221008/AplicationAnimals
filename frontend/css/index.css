@@ -1,10 +1,10 @@
 .title{
     text-align: center;
-    color: aliceblue;
+    color: rgb(102, 173, 236);
 
 }
 .container{
-    background-color: black;
+    background-color: rgb(247, 236, 236);
     height: 85rem;
 }
 body{
@@ -13,4 +13,16 @@ body{
 .tabla{
     background-color: aqua;
     width: 20rem;
+}
+
+.lista{
+    background-color: blueviolet;
+    width: 5rem;
+    margin-left: 20rem;
+    margin-top: 5rem;
+}
+.agregar{
+    width: 5rem;
+    height: 2rem;
+    margin-left: 20rem;
 }

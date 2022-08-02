@@ -18,7 +18,7 @@ export const animalPost= async(url, nombre, especie)=>{
         },
         body: JSON.stringify({
             Nombre: nombre || '',
-            especie: especie || ''
+            Especie: especie || ''
         })
 
     }
