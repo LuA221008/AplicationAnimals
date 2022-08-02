@@ -1,19 +1,14 @@
 {
   "Amimales": [
     {
-      "Nombre": "pez",
-      "Especie": "pescado",
+      "Nombre": "pescadito",
+      "especie": "ballena",
       "id": 3
     },
     {
-      "Nombre": "conejo",
-      "Especie": "rabbito",
+      "Nombre": "conejito",
+      "especie": "conejote",
       "id": 4
-    },
-    {
-      "Nombre": "perro",
-      "Especie": "Can",
-      "id": 5
     }
   ]
 }

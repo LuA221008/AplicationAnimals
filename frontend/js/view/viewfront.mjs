@@ -1,5 +1,4 @@
-import { animalDelete, getAnimal} from "../controller/contoller.mjs";
-import{animalPost} from"../controller/contoller.mjs"
+import { animalDelete, getAnimal,animalPost, animalPut} from "../controller/contoller.mjs";
 
 
 let data= await getAnimal("http://localhost:3000/Amimales");
@@ -15,6 +14,7 @@ let label = document.createElement("label");
 label.innerText = "Nombre del animal: ";
 
 let imput = document.createElement("input");
+imput.classList.add("nombre")
 label.append(imput)
 
 
@@ -22,6 +22,7 @@ let labelEspecie = document.createElement("label");
 labelEspecie.innerText="Especie del animal:"
 
 let imputEspecie = document.createElement("input");
+labelEspecie.classList.add("especie")
 labelEspecie.append(imputEspecie)
 
 
@@ -82,6 +83,11 @@ export const viewTitle = ()=>{
         buttonEleminar.classList.add("elimina");
         buttonEleminar.innerHTML="Eliminar" 
 
+
+        let buttonActualizar = document.createElement("button");
+        buttonActualizar.classList.add("actualizar");
+        buttonActualizar.innerHTML="actualizar"
+
         let crearId = document.createElement("div")
         let id=crearId.textContent=(element.id)
         
@@ -91,14 +97,20 @@ export const viewTitle = ()=>{
         crearA.textContent = (element.Nombre);
 
         let crearB = document.createElement("div");
-        crearB.textContent = (element.Especie); 
+        crearB.textContent = (element.especie); 
         
-        crearId.append(crearA,crearB,buttonEleminar)       
+        crearId.append(crearA,crearB,buttonEleminar,buttonActualizar)       
         
-        console.log(id)
+        
         
         buttonEleminar.addEventListener("click",()=>{
             eliminarAnimal(id);
+        })
+
+        buttonActualizar.addEventListener("click",()=>{
+            let nombre = imput.value;    
+            let especie= imputEspecie.value;            
+            actualizarAnimal(id,nombre,especie)
         })
         listaEspecie.append(crearId);
       
@@ -112,6 +124,11 @@ export const viewTitle = ()=>{
 
   function eliminarAnimal(id){
     animalDelete("http://localhost:3000/Amimales",id)
+  }
+
+  function actualizarAnimal(id,nombre,especie){
+    animalPut("http://localhost:3000/Amimales",id,nombre,especie)
+
   }
 
   
